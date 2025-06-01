@@ -1,0 +1,253 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 
+    
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.left img {
+    height: 50px; 
+    width: auto;
+    margin-right: 10px; 
+}
+
+.right nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    margin-right: 30px; 
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-weight: bold;
+    font-family: sans-serif;
+    transition: color 0.3s;
+    font-size: 0.8rem;
+}
+
+nav ul li a:hover {
+    color: #7d7c86; 
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: white; 
+    color: white;
+}
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 80px;
+    width: auto; 
+    margin-right: 15px;
+}
+.DA{
+    color: white;
+}
+
+h1 {
+    font-size: 12px;
+    margin: 0;
+    font-weight: bold; 
+    color: black; 
+}
+.sep{
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+    padding: auto;
+}
+#main{
+ margin-top: 1px;
+}
+.bloc{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.bloc video{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    z-index: -100;
+}
+.bloc1{
+ height: 60%;
+ width: 45%;
+ margin-top: 10%;
+ background: rgba(255, 255, 255, 0.2);
+ margin-left: 70px;
+ border-radius: 5px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+.bloc1 h2, .bloc1 p{
+    color: white;
+    margin-left: 25px;
+} 
+.bloc1 h2{
+    font-family: 'Playfair Display', serif;
+    line-height: 45px;
+    font-weight: lighter;
+    font-size: 40px;
+}
+.bloc1 p{
+    margin-top: 20px;
+    margin-bottom: 45px;
+   font-family: 'Roboto', sans-serif;
+   font-size: 1rem;
+   line-height: 1.6;
+
+}
+.bloc1 button{
+    cursor: pointer;
+    width: 50%;
+    height: 50px;
+    margin: 5px auto;
+    border-radius: 10px;
+      font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.color1{
+   background:  rgba(255, 255, 255, 0.2); 
+}
+.color{
+    background: aqua;
+}
+.bloc1 button:hover{
+    background:  #64686d;
+    transition: all 0.5s;
+}
+.fa-phone{
+    color: aqua;
+    font-size: 30px;
+}
+.fa-truck-moving{
+    color: aqua;
+    font-size: 30px;
+}
+.fa-share{
+    color: aqua;
+    font-size: 30px;
+}
+.fa-check{
+    color: aqua;
+    font-size: 30px;
+}
+#Apropos{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #ededed;
+}
+.bloc2{
+    height: 80px;
+    width: 200px;
+    background-color: white;
+    border: none;
+    display: flex;
+    margin:70px auto;
+    justify-content: center;
+    align-items: center;
+    padding: auto 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.bloc2 h4{
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    margin-left: 6px;
+}
+#Boutique{
+    height: 100%;
+    width: 100%;
+    margin: 40px auto;
+}
+.bloc3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bloc3 h1{
+    font-family: 'Playfair Display', serif;
+    line-height: 45px;
+    font-weight: bold;
+    font-size: 40px; 
+    margin: 40px auto;
+}
+.trait{
+    border-bottom: 1px solid black;
+    margin-left: 25px;
+    width: 80%;
+}
+.bloc4{
+    margin-top: 30px auto;
+    display: flex;
+    width: 100%;
+}
+.bloc5{
+    margin: 20px auto; 
+}
+.bloc5 img{
+    height: 300px;
+    width: 300px;
+     box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.2);
+     transition: transform 1s;
+}
+.bloc5 h4 , .bloc5 p{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+.bloc5 img:hover{
+  transform: translateY(-30px);
+}
+.bloc6 .trait{
+     border-bottom: 1px solid black;
+    margin-left: 25px;
+    width: 60%;
+}
+/* footer */
+footer{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
