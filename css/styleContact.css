@@ -1,0 +1,225 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 
+    
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.left img {
+    height: 50px; 
+    width: auto;
+    margin-right: 10px; 
+}
+
+.right nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    margin-right: 30px; 
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-weight: bold;
+    font-family: sans-serif;
+    transition: color 0.3s;
+    font-size: 0.8rem;
+}
+
+nav ul li a:hover {
+    color: #7d7c86; 
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: white; 
+    color: white;
+}
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 80px;
+    width: auto; 
+    margin-right: 15px;
+}
+.DA{
+    color: white;
+}
+
+h1 {
+    font-size: 12px;
+    margin: 0;
+    font-weight: bold; 
+    color: black; 
+}
+.sep{
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+    padding: auto;
+}
+
+#maincontact{
+height: 300px;
+width: 100%;    
+ background: url("../img/img10.jpg") left no-repeat;
+ background-size: cover;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+#maincontact h1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 55px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    overflow-x: hidden;
+}
+.global{
+ height: 200px;
+ width: 100%;
+ display: flex;
+ flex-direction: row;
+  margin: 40px 20px 10px 20px;
+}
+.bloc-left h1{
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size:30px;
+    text-align: justify;
+    margin-bottom: 20px;
+    display: block;
+}
+.bloc-left{
+  width: 75%;
+}
+.bloc-left p{
+    padding-right: 20%;
+}
+.bloc-right{
+    width: 25%;
+    margin-left: 40%;
+    margin-top: 40px;
+    padding-right: 20px;
+}
+.bloc-right input[type="email"]{
+    font-size: 1.5rem;
+    display: inline-block;
+    height: 55px;
+    background-color: #b1b1b1;
+    transition: color 0.5s;
+    border-radius: 6px; 
+    margin-bottom: 20px;
+
+}
+.bloc-right input[type="email"]:hover{
+  background-color: white;
+}
+.bloc-right .fa-facebook{
+    margin-right: 18px;
+}
+.bloc-right .fa-x-twitter{
+    margin-right: 18px;
+}
+.bloc-right .fa-youtube{
+    margin-right: 18px;
+}
+.bloc-right .fa-instagram{
+    margin-right: 18px;
+}
+.ligne{
+    border-bottom: 2px solid white;
+    margin-left: 25px;
+    width: 95%;
+}
+.desc{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    margin: 40px 20px 10px 20px;
+
+}
+.vehicules, .Outils, .electrique, .Informations, .Decouvrez{
+  width: 20%;  
+} 
+.vehicules h4, .Outils h4, .electrique h4, .Informations h4, .Decouvrez h4{
+  margin-bottom: 10px; 
+  text-align: left;
+  font-weight: bold;
+  font-family: sans-serif;
+} 
+
+.vehicules p, .Outils p, .electrique p, .Informations p, .Decouvrez p{
+ color: #64686d;
+ text-align: left;
+ margin-bottom: 5px;
+} 
+.Decouvrez{
+    margin-right: 50px;
+}
