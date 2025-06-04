@@ -48,7 +48,6 @@ nav ul li {
 nav ul li a {
     color: rgb(255, 255, 255);
     cursor: pointer;
-    font-weight: bold;
     font-family: sans-serif;
     transition: color 0.3s;
     font-size: 0.8rem;
@@ -90,11 +89,110 @@ h1 {
     margin-left: 120px;
     padding: auto;
 }
+.fa-cart-shopping{
+    color: white;
+    font-size: 30px;
+}
+.fa-user-tie{
+    color: white;
+    margin-right: 5px;
+}
+.bloc-contact{
+    height: 400px;
+    width: 100%;
+    display: flex;
+}
+.bloc-contact-left-img, .bloc-contact-right-img{
+  width: 50%;
+    
+}
+.bloc-contact-left , .bloc-contact-rigth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.bloc-contact-left-img img, .bloc-contact-right-img img{
+     box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.2);
+     transition: transform 1s; 
+     scale: 0.5;  
+}
+.bloc-contact-left-text , .bloc-contact-right-text{
+    width: 50%;
+    text-align: justify;
+}
+.bloc-contact-right-text, .bloc-contact-left-text{
+    margin-right: 30px;
+}
+.bloc-contact-right-text-p{
+ color: var(--couleur1);
+}
+.formulaire{
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.formulaire h5{
+    text-align: center;
+    margin: 10px auto 20px;
+    color: var(--couleur1);
+}
+.formulaire h3{
+   text-align: center;
+   font-size: 45px;
+   text-transform: capitalize;
+   font-family: sans-serif;
+}
+.formulaire p{
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+    margin: 15px auto 20px;
+    display: inline-block;
+}
+form input{
+    width: 70%;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px auto;
+    background-color: #ffffffe5;
+}
+form input:hover{
+    background-color: white;
+}
+form textarea{
+   width: 70%;
+    height: 100px;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px auto;
+    background-color: #ffffffe5;
+}
+form button{
+    width: 70%;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px auto;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: aqua;
+    transition: background-color all 0.5s;
+}
+
+
 
 #maincontact{
 height: 300px;
 width: 100%;    
- background: url("../img/img10.jpg") left no-repeat;
+ background: url("../../img/img10.jpg") left no-repeat;
  background-size: cover;
  display: flex;
  align-items: center;
@@ -106,24 +204,8 @@ width: 100%;
     font-size: 55px;
     color: white;
     text-transform: uppercase;
-    font-weight: bold;
-    
+    font-weight: bold;   
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

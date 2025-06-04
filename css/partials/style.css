@@ -48,14 +48,13 @@ nav ul li {
 nav ul li a {
     color: rgb(255, 255, 255);
     cursor: pointer;
-    font-weight: bold;
     font-family: sans-serif;
     transition: color 0.3s;
     font-size: 0.8rem;
 }
 
 nav ul li a:hover {
-    color: #7d7c86; 
+    color: var(--couleur1); 
 }
 
 footer {
@@ -89,6 +88,14 @@ h1 {
     flex-direction: row;
     margin-left: 120px;
     padding: auto;
+}
+.fa-cart-shopping{
+    color: white;
+    font-size: 30px;
+}
+.fa-user-tie{
+    color: white;
+    margin-right: 5px;
 }
 
 
@@ -157,7 +164,7 @@ h1 {
     background: aqua;
 }
 .bloc1 button:hover{
-    background:  #64686d;
+    background:  var(--couleur2);
     transition: all 0.5s;
 }
 .fa-phone{
