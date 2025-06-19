@@ -30,6 +30,8 @@
             </ul>
         </nav>
     </div>
+    <img src="./img/menu-btn.png" alt="hamburger" class="menu-hamburger">
+
 </header>
 <section id="maincontact">
    <h1>CONTACTEZ-NOUS</h1>
@@ -74,7 +76,15 @@
 <form>
     <input type="text" placeholder="Votre nom">
     <input type="email" placeholder="votre Email">
-    <input type="text" placeholder="Votre preocupation">
+
+        <select name="voiture" class="voiture">
+            <option >service souhaité</option>
+            <option >Vente de voitures neuves</option>
+            <option >Vente de voitures d’occasion</option>
+            <option >Reprise de véhicule</option>
+            <option >Vente en ligne ou à distance</option>
+        </select>
+
     <textarea cols="4" rows="5" placeholder="Message"></textarea>
     <button>Envoyer</button>
 </form>
@@ -88,7 +98,6 @@
                     <p>Recevez les dernières nouvelles, offres spéciales et exclusivités.</p>
                 </div>
                 <div class="bloc-right">
-                    <input type="email" placeholder="Adresse email">
                     <i class="fa-brands fa-facebook"></i> 
                     <i class="fa-brands fa-x-twitter"></i>
                     <i class="fa-brands fa-youtube"></i>
@@ -98,10 +107,11 @@
             <div class="ligne"></div>
             <div class="desc">
                 <div class="vehicules">
-                <h4>Véhicules</h4>
-                <p>SUV</p>
-                <p>Berline et familliale</p>
-                <p>coupes</p>
+                <a href="index.html">Accueil</a>    
+                <a href="Apropo.html">A propos</a>
+                <a href="Boutique.html">Boutique</a>
+                <a href="Servicesclient.html">Services client</a>
+                <a href="contact.html">contact</a>
                 </div>
                 <div class="Outils">
                 <h4>Outils d'achat</h4>
@@ -115,22 +125,29 @@
                 <p>Range Rover electrique</p>
                 <p>TESLA electrique</p>
                 </div>
-                <div class="Informations">
-                <h4>Informations sur les propriétaires</h4>
-                <p>DRIVE PILOT</p>
-                <p>Soutien aux propriétaires</p>
-                <p>Assistance a la maintenace</p>
-                </div>
-                <div class="Decouvrez">
-                <h4>Découvrez DARRYCK MOTORS</h4>
-                <p>A propos de nous</p>
-                <p>Notre inpact</p>
-                <p>MANUFACTURE</p>
-                </div>
             </div>
             <div class="ligne"></div>
             <img src="./img/icon.png" height="10%" width="10%">
             <p>&copy; 2025 DARRYCK MOTORS. Tous droits réservés.</p>
        </footer>
+         <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".right")
+        const bloc1 = document.querySelector(".bloc1")
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        if(bloc1.style.display === "none")
+        {
+            bloc1.style.display = "block" ;
+
+        }else {
+                bloc1.style.display = "none" ;
+        }
+
+        })
+
+    
+        </script>
 </body>
 </html>

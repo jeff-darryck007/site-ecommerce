@@ -1,0 +1,339 @@
+ /* RESPONSIVE HEADER */
+ @media screen and (max-width : 1145px){
+    
+
+    header
+    {
+        padding: 0;
+        /* margin-bottom: 700px; */
+    }
+    
+    header .left
+    {
+        position: absolute;
+        top: 30px;
+        left: 50px;
+    }
+
+   .right
+   {
+    top: 0;
+    left: 0;
+     position: absolute;
+     width: 100%;
+     background-color: rgba(10, 10, 10, 0.836) ;
+
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-left: -100%;
+     transition: all 0.5s ease;
+   }
+
+   .right.mobile-menu
+   {
+      margin-left: 0;
+      margin-top: 80px;
+   }
+
+ 
+   .right nav ul{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    
+   }
+
+   .right nav ul .sep
+   {
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin-left: 0;
+    
+   }
+
+   header .menu-hamburger
+   {
+      display: block;
+   }
+
+   header .right nav ul li
+   {
+      margin: 25px 0;
+      font-size: 1.2em;
+   }
+
+   .active{
+       
+        color: red;
+   }
+    
+}
+
+
+/* ----------- TABLETTE ----------- */
+@media (max-width: 992px) {
+  /* Section vidéo + texte */
+  .bloc {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bloc video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Bloc1 superposé */
+.bloc1 {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5); /* fond foncé transparent */
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.bloc1 h2 {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+
+.bloc1 p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.bloc1 button {
+  width: 90%;
+  margin: 8px auto;
+  height: 45px;
+}
+
+
+  /* Section à propos */
+  #Apropos {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 10px;
+  }
+  .bloc2 {
+    flex: 1 1 45%;
+    max-width: 45%;
+    margin: 30px 10px;
+    box-sizing: border-box;
+  }
+
+  /* Nouveaux modèles et meilleures ventes */
+  .bloc4 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0 10px;
+  }
+  .bloc5 {
+    flex: 1 1 30%;
+    max-width: 30%;
+    margin: 15px 10px;
+    box-sizing: border-box;
+  }
+
+  .bloc5 img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+
+  /* Newsletter */
+  .bloc-newsletter input[type="email"] {
+    width: 60%;
+  }
+  .bloc-newsletter button {
+    width: 30%;
+  }
+
+  .bloc-newsletter h2 {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+
+  /* Footer */
+  .global {
+    flex-wrap: wrap;
+    height: auto;
+    margin: 30px 10px;
+  }
+  .bloc-left, .bloc-right {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+  .bloc-right {
+    margin-left: 0;
+  }
+  .desc {
+    flex-wrap: wrap;
+  }
+  .vehicules, .Outils, .electrique {
+    width: 45%;
+    margin-bottom: 15px;
+  }
+}
+
+/* ----------- MOBILE ----------- */
+
+@media (max-width: 600px) {
+
+
+  /* Section vidéo + texte */
+
+  header {
+  position: relative;
+  z-index: 1001;
+  background-color: black;
+}
+
+    .right {
+        z-index: 1000;
+    }
+  .left {
+    background-color: transparent;
+  }
+
+  .bloc {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.right.mobile-menu nav
+{
+     background-color: rgba(10, 10, 10, 0.836) ;
+
+}
+
+.bloc video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Bloc1 superposé */
+.bloc1 {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5); /* fond foncé transparent */
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.bloc1 h2 {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+
+.bloc1 p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.bloc1 button {
+  width: 90%;
+  margin: 8px auto;
+  height: 45px;
+}
+
+  /* Section à propos */
+  #Apropos {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+  .bloc2 {
+    max-width: 100%;
+    margin: 20px auto;
+    box-sizing: border-box;
+  }
+
+  /* partie Nouveaux modèles et meilleures ventes */
+  .bloc4 {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+  .bloc5 {
+    max-width: 100%;
+    margin: 20px auto;
+    box-sizing: border-box;
+  }
+  .bloc5 img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+
+  /* partie Newsletter */
+  .bloc-newsletter input[type="email"] {
+    width: 100%;
+  }
+  .bloc-newsletter button {
+    width: 100%;
+  }
+
+ .bloc-newsletter h2 {
+  font-size: 22px;
+  line-height: 28px;
+}
+
+
+  /* Footer */
+  .global {
+    flex-direction: column;
+    height: auto;
+    margin: 20px 10px;
+  }
+  .bloc-left, .bloc-right {
+    width: 100%;
+    margin: 15px 0;
+    text-align: center;
+  }
+  .desc {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+  .vehicules, .Outils, .electrique {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}

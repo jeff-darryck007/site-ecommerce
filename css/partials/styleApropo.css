@@ -1,0 +1,212 @@
+
+.contai {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+
+.about-section {
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.about-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.about-section .illustration {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+
+.brands-section {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.brands-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.brands {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.brands img {
+  height: 60px;
+  object-fit: contain;
+}
+
+
+.team-section {
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+
+.testimonials-section {
+  background-color: #fff;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.testimonial {
+  max-width: 600px;
+  font-style: italic;
+  background: #f3f3f3;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* ====================== RESPONSIVE DESIGN ====================== */
+
+/* TABLETTE (≤ 1024px) */
+@media screen and (max-width: 1024px) {
+  .contai {
+    padding: 20px;
+  }
+
+  .about-section h1 {
+    font-size: 2rem;
+  }
+
+  .brands img {
+    height: 50px;
+  }
+
+  .team {
+    gap: 20px;
+  }
+
+  .team-member {
+    width: 160px;
+    padding: 15px;
+  }
+
+  .testimonials {
+    padding: 0 15px;
+  }
+
+  .testimonial {
+    font-size: 0.95rem;
+  }
+}
+
+/* MOBILE (≤ 480px) */
+@media screen and (max-width: 480px) {
+  .about-section h1 {
+    font-size: 1.6rem;
+  }
+
+  .about-section p {
+    font-size: 1rem;
+  }
+
+  .brands {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brands img {
+    height: 45px;
+    margin-bottom: 10px;
+  }
+
+  .team {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .testimonials {
+    padding: 0 10px;
+  }
+
+  .testimonial {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .testimonial span {
+    font-size: 0.95rem;
+  }
+
+  footer .global,
+  footer .desc {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .bloc-left, footer .bloc-right,
+  footer .desc > div {
+    width: 90%;
+    text-align: center;
+  }
+
+  footer img {
+    width: 50%;
+  }
+}
+

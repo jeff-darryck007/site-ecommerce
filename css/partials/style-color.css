@@ -1,4 +1,12 @@
 :root {
   --couleur1: #7d7c86;
   --couleur2: #64686d;
+  --main-bg: #f8f8f8;
+  --text-color: #111;
+  --link-color: #000;
+  --hover-color: aqua;
+  --border-color: #e0e0e0;
+  --price-color: aqua;
+  --old-price-color: #888;
+  --card-bg: #ffffff;
 }
